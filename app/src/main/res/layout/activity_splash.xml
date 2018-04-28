@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 登入界面展示的一张启动图 -->
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/splash_bg"
+    android:scaleType="centerCrop"
+    tools:context="com.example.nao.ui.activity.SplashActivity"/>
+    <!-- scaleType图片缩放模式设置为centerCrop保证屏幕铺满屏蔽且不变形  启动图比例一般为16:9-->

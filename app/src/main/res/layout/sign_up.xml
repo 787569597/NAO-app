@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:theme="@style/AppTheme.NoActionBar">
+
+    <ImageView
+        android:id="@+id/iv_signUp_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/sign_up_logo" />
+
+
+
+    /*  用户名设置 */
+    <RelativeLayout
+        android:id="@+id/rl_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/iv_signUp_logo"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_signUp_user"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/signup_user" />
+
+        <EditText
+            android:id="@+id/et_userNameEdit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/iv_signUp_user"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:ems="19"
+            android:hint="用户名"
+            android:textCursorDrawable="@null"
+            android:textSize="17sp"
+            android:layout_gravity="center"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_userNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_userName"
+        android:text="由10位以内字母和数字组成"
+        android:textColor="@color/grayText"
+        android:textSize="15sp"
+        android:typeface="monospace" />
+
+    /*  设置密码 */
+    <RelativeLayout
+        android:id="@+id/rl_UserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv_userNameText"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_signUp_password1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/signup_password1" />
+
+        <EditText
+            android:id="@+id/et_UserPasswordEdit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="19"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    /*  确认密码设置 */
+
+    <RelativeLayout
+        android:id="@+id/rl_CheckUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_UserPassword"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/iv_signUp_password2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/signup_password1" />
+
+        <EditText
+            android:id="@+id/et_CheckUserPasswordEdit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/iv_signUp_password2"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:ems="19"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:textSize="17sp" />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_CheckPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_CheckUserPassword"
+        android:layout_marginStart="37dp"
+        android:text="由不少于八位的数字和字母组成"
+        android:textColor="@color/grayText"
+        android:textSize="15sp"
+        android:typeface="monospace" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_userNameText"
+        android:layout_below="@+id/tv_CheckPasswordText">
+
+        <CheckBox
+            android:id="@+id/cb_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:checked="true"
+            android:duplicateParentState="false"
+            android:text="我已同意账号管理条例"
+            android:textColor="@color/grayText"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_guanlitiaoli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cb_checkbox"
+            android:layout_alignBottom="@+id/cb_checkbox"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/cb_checkbox"
+            android:text="账号管理条例" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_CheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="注册"
+        android:textColor="#FFF"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
