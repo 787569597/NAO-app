@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
-        android:src="@mipmap/sign_up_logo" />
+        android:src="@mipmap/sign_logo" />
 
 
 

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
-import android.util.EventLog;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,11 +17,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.nao.R;
-import com.example.nao.Util.ToastUtils;
+import com.example.nao.util.ToastUtils;
 
 import org.json.JSONException;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

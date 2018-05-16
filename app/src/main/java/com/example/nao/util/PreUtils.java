@@ -1,4 +1,4 @@
-package com.example.nao.Util;
+package com.example.nao.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

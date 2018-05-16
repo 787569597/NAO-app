@@ -6,4 +6,6 @@
 
 
     <color name="grayText">#888888</color>
+    <color name="whiteText">#FFFFFF</color>
+    <color name="lucency">#00000000</color>
 </resources>

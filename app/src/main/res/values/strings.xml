@@ -3,4 +3,5 @@
     <string name="tip_userName_please_input_in_10">用户名为十位以内的数字、字母或中文</string>
     <string name="tip_UserPassword_please_input_8_16">密码为8-16位的数字或字母组合</string>
     <string name="tip_CheckUserPassword_different">输入的确认密码和密码不符</string>
+    <string name="action_settings">Settings</string>
 </resources>

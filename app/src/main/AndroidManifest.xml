@@ -16,13 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-<!--注册界面-->
-        <activity android:name=".ui.activity.SignUpActivity"
+
+        <!--主界面-->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <!--注册界面-->
+        <activity
+            android:name=".ui.activity.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-    </application>
+
+        <!--登入界面-->
+
+
+
+
+</application>
 
 
 </manifest>

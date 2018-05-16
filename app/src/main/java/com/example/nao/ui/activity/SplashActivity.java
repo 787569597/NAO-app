@@ -8,7 +8,6 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 
 import com.example.nao.R;
-import com.example.nao.Util.PreUtils;
 
 /**
  * Created by 爱冒险的小鸡仔 on 2018/4/17.
@@ -53,20 +52,19 @@ public class SplashActivity  extends AppCompatActivity{
         iv.startAnimation(alpha);
     }
     private void jumpToNextPage(){
-        //判断是否第一次进入，默认是第一次
-//        boolean isFirst = PreUtils.getBoolean(this, "isFirst", true);
-
-        Intent intent = new Intent(SplashActivity.this, SignUpActivity.class);
-//        if (isFirst){
-            //进入引导界面
-//            intent.setClass(this, SignUpActivity.class);
-//        }
-//        else {
-            //进入功能界面
-//            intent.setClass(this, SignUpActivity.class);
-//        }
-
-        startActivity(intent);
-        finish();
+        /*
+//        判断是否第一次进入，默认是第一次
+        boolean isFirst = PreUtils.getBoolean(this, "isFirst", true);
+        if (isFirst){
+//            进入引导界面
+            intent.setClass(this, SignUpActivity.class);
+        }
+        else {
+//            进入功能界面
+            intent.setClass(this, SignUpActivity.class);
+       }
+*/
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        SplashActivity.this.finish();
     }
 }
