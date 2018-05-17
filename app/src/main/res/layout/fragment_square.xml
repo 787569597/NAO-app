@@ -7,25 +7,35 @@
     <RelativeLayout android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivSearch"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_search_24dp"
+            android:scaleType="fitXY" />
+
         <HorizontalScrollView
             android:id="@+id/hvChannel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/ivShowChannel"
+            android:layout_toRightOf="@id/ivSearch"
+            android:layout_toLeftOf="@+id/ivEnter"
+
             android:scrollbars="none">
 
             <RadioGroup
                 android:id="@+id/rgChannel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
             </RadioGroup>
 
         </HorizontalScrollView>
 
         <ImageView android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/ivShowChannel"
+            android:id="@+id/ivEnter"
             android:layout_alignParentRight="true"
             android:src="@drawable/ic_add_box_48dp"
             android:scaleType="fitXY" />

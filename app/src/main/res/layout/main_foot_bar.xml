@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/ivImg"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" />
 
@@ -17,9 +17,9 @@
         android:id="@+id/tvTab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
         android:layout_below="@+id/ivImg"
-        android:textColor="#AEAEAE"
+        android:textColor="@color/grayText"
         android:text="动态" android:layout_marginTop="2dp"/>
 
 </RelativeLayout>

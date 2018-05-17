@@ -27,8 +27,7 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tabHost=(FragmentTabHost)super.findViewById(android.R.id.tabhost);
-        tabHost.setup(this,super.getSupportFragmentManager()
-                , R.id.contentLayout);
+        tabHost.setup(this,super.getSupportFragmentManager(), R.id.contentLayout);
         tabHost.getTabWidget().setDividerDrawable(null);
         tabHost.setOnTabChangedListener(this);
         initTab();

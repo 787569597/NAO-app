@@ -17,10 +17,12 @@
         android:id="@android:id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F6F6F6">
+        android:background="#F4F4F4">
 
         <FrameLayout android:id="@android:id/tabcontent"
-            android:layout_height="0dp" android:layout_width="0dp" />
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:background="@drawable/main_background"/>
 
     </android.support.v4.app.FragmentTabHost>
 

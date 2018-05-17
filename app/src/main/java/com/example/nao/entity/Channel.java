@@ -17,7 +17,7 @@ public class Channel
         super();
         this.id=id;
         this.name = name;
-//        this.order = order;
+       this.order = order;
 
     }
     public String getName() {
